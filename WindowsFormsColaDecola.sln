@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsColaDecola", "WindowsFormsColaDecola\WindowsFormsColaDecola.csproj", "{EC79E6E9-05B0-428E-AFA0-6B7A03043B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC79E6E9-05B0-428E-AFA0-6B7A03043B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC79E6E9-05B0-428E-AFA0-6B7A03043B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC79E6E9-05B0-428E-AFA0-6B7A03043B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC79E6E9-05B0-428E-AFA0-6B7A03043B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {175E7958-C3AB-47AC-8149-D1932B23634A}
+	EndGlobalSection
+EndGlobal
