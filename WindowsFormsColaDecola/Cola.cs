@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsColaDecola
 {
@@ -43,7 +44,7 @@ namespace WindowsFormsColaDecola
         {
             if (this.colallena())
             {
-                Console.WriteLine("LA COLA ESTA LLENA");
+                MessageBox.Show("LA COLA ESTA LLENA");
 
             }
             else
@@ -60,7 +61,7 @@ namespace WindowsFormsColaDecola
         {
             if (this.colallena())
             {
-                Console.WriteLine("LA COLA ESTA LLENA");
+                MessageBox.Show("LA COLA ESTA LLENA");
 
             }
             else
@@ -74,11 +75,11 @@ namespace WindowsFormsColaDecola
         {
             if (this.colavacia())
             {
-                Console.WriteLine("LA COLA ESTA VACIA");
+                MessageBox.Show("LA COLA ESTA VACIA");
             }
             else
             {
-                Console.WriteLine("SE ELIMINO CON EXITO EL ELEMENTO " + this.items[this.primero] + " DE LA COLA");
+                MessageBox.Show("SE ELIMINO CON EXITO EL ELEMENTO " + this.items[this.primero] + " DE LA COLA");
                 for (int i = 0; i < this.ultimo; i++)
                 {
                     this.items[i] = this.items[i + 1];
@@ -90,27 +91,20 @@ namespace WindowsFormsColaDecola
         {
             if (this.colavacia())
             {
-                Console.WriteLine("LA COLA ESTA VACIA");
+                MessageBox.Show("LA COLA ESTA VACIA");
             }
             else
             {
-                Console.WriteLine("SE ELIMINO CON EXITO EL ELEMENTO " + this.items[this.ultimo] + " DE LA COLA");
+                MessageBox.Show("SE ELIMINO CON EXITO EL ELEMENTO " + this.items[this.ultimo] + " DE LA COLA");
                 this.ultimo--;
             }
         }
-        public void ListarItems()
+        public void ListarItems(ListBox lista)
         {
-            if (this.colavacia())
+            lista.Items.Clear();
+            for (int i = 0; i <= this.ultimo; i++)
             {
-                Console.WriteLine("LA COLA ESTA VACIA");
-
-            }
-            else
-            {
-                for (int i = 0; i <= this.ultimo; i++)
-                {
-                    Console.WriteLine("[" + i + "] => " + this.items[i]);
-                }
+                lista.Items.Add("[" + i + "] => " + this.items[i]);
             }
         }
     }
